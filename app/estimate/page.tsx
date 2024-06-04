@@ -4,7 +4,7 @@ import EstimateCalcForm from '@/components/Estimate/EstimateCalcForm'
 import Sidebar from '@/components/Estimate/Sidebar'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   const [params, setParams] = React.useState<EstimateParams>({
     selectForkliftId: '',
     startDay: '',
@@ -40,4 +40,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
