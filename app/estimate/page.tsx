@@ -6,8 +6,14 @@ import React from 'react'
 
 const page = () => {
   const [params, setParams] = React.useState<EstimateParams>({
-    id: '',
+    selectForkliftId: '',
+    startDay: '',
+    rentalPeriod: 0,
+    transportationMethod: '運搬を依頼する',
+    isAskOperator: 'オペレーター派遣を依頼する',
+    monthOrDay: '',
   })
+  const [total, setTotal] = React.useState(0)
   const breadcrumbItems = [
     { name: 'ホーム', href: '/' },
     { name: '料金見積もり', href: '/estimate' },
@@ -20,9 +26,15 @@ const page = () => {
       </div>
       <Breadcrumb items={breadcrumbItems} />
 
-      <div className="mx-auto flex max-w-6xl justify-between">
-        <EstimateCalcForm className="w-[800px]" />
-        <Sidebar className="w-[272px]" />
+      <div className="mx-auto mt-20 flex max-w-6xl justify-between">
+        <EstimateCalcForm
+          className="w-[800px]"
+          params={params}
+          setParams={setParams}
+          setTotal={setTotal}
+          total={total}
+        />
+        <Sidebar className="w-[272px]" params={params} total={total} />
       </div>
     </main>
   )

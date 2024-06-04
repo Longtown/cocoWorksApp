@@ -19,6 +19,9 @@ export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElemen
         対応エリア
       </Link>
       <Link href="#" className="text-white">
+        料金見積もり
+      </Link>
+      <Link href="#" className="text-white">
         お問い合わせ
       </Link>
     </nav>

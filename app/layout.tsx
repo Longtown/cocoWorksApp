@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="">
-      <body className={cn(ibmPlexSansJp.className, '')}>
+      <body className={cn(ibmPlexSansJp.className, 'text-[#0A1C0F]')}>
         <Header />
         {children}
         <Footer />

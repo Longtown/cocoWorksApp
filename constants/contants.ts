@@ -1,0 +1,35 @@
+export const forklifts = [
+  {
+    id: '1',
+    imgUrl: '/images/forklift1.png',
+    operatorOption: true,
+    companyName: 'トヨタ',
+    modelName: '8FDL18',
+    oneDayRentMoney: 9000,
+    oneMonthRentMoney: 90000,
+  },
+  {
+    id: '2',
+    imgUrl: '/images/forklift2.png',
+    companyName: '三菱',
+    modelName: 'KFDE25P-T',
+    oneDayRentMoney: 11000,
+    oneMonthRentMoney: 110000,
+  },
+  {
+    id: '3',
+    imgUrl: '/images/forklift3.png',
+    companyName: '三菱',
+    modelName: 'FDE35AP-T',
+    oneDayRentMoney: 19000,
+    oneMonthRentMoney: 190000,
+  },
+  {
+    id: '4',
+    imgUrl: '/images/forklift4.png',
+    companyName: '三菱',
+    modelName: 'EG1F4A50',
+    oneDayRentMoney: 25000,
+    oneMonthRentMoney: 250000,
+  },
+]
