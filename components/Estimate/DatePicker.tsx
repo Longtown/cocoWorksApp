@@ -21,7 +21,9 @@ export function DatePicker({
   const [date, setDate] = React.useState<Date>()
 
   React.useEffect(() => {
-    setParams({ ...params, startDay: date })
+    if (date) {
+      setParams({ ...params, startDay: date })
+    }
   }, [date])
 
   return (
